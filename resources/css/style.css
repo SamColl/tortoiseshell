@@ -64,8 +64,9 @@ body {
   background-color: cadetblue;
   display: flex;
   width: 100%;
-  padding: 1rem 2rem;
-
+  position: relative;
+  top: 1rem;
+  justify-content: space-between;
 }
 .logo {
   display: flex;
@@ -77,4 +78,37 @@ body {
 }
 .logo img {
   height: 1.5rem;
+  padding-right: 1rem;
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+ ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+
+}
+li {
+  padding: 1rem 1rem;
+}
+.small-screen-menu {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  .top-banner {
+    position: absolute;
+}
+}
+@media only screen and (max-width: 615px) {
+  .logo span {
+    display: none;
+  }
+  .menu ul {
+    display: none;
+  }
+  .small-screen-menu {
+    display: block;
+  }
 }
