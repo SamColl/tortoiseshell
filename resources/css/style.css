@@ -1,0 +1,43 @@
+/* box model with reset*/
+
+html {
+  box-sizing: border-box;
+}
+*,*:before, *:after {
+  box-sizing: inherit;
+}
+
+/* universal styles */
+
+* {
+  border: 2px solid black;
+}
+
+html {
+  font-size: 18px;
+}
+body {
+  line-height: 1.4rem;
+  font-family: "helvetica", sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  display: flex;
+  margin: 0 auto;
+}
+
+/* background image */
+
+.background-image-container {
+  background-image: url("/Users/SamCollins/Documents/GitHub/SamColl.io/tortoiseshell/resources/images/glasses-bg.png");
+  height: 30rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.top-banner {
+  background-color: cadetblue;
+}
