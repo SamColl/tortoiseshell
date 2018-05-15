@@ -22,7 +22,7 @@ body {
 }
 
 .container {
-  max-width: 960px;
+  width: 960px;
   display: flex;
   margin: 0 auto;
 }
@@ -45,6 +45,9 @@ body {
     height: 22rem;
     background-position: 40%;
   }
+  .container {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 560px) {
@@ -52,8 +55,26 @@ body {
     height: 17rem;
     background-position: 30%;
   }
+  .container {
+    width: 100%;
+  }
 }
-
+/* top banner with logo and menu */
 .top-banner {
   background-color: cadetblue;
+  display: flex;
+  width: 100%;
+  padding: 1rem 2rem;
+
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.top-text {
+  color: white;
+
+}
+.logo img {
+  height: 1.5rem;
 }
