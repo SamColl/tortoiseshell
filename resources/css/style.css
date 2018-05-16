@@ -1,17 +1,7 @@
-/* box model with reset*/
-
-html {
-  box-sizing: border-box;
-}
-*,*:before, *:after {
-  box-sizing: inherit;
-}
 
 /* universal styles */
 
-* {
-  border: 2px solid black;
-}
+
 
 html {
   font-size: 18px;
@@ -19,12 +9,18 @@ html {
 body {
   line-height: 1.4rem;
   font-family: "helvetica", sans-serif;
+  width: 100%;
+  height: auto;
 }
 
 .container {
-  width: 960px;
-  display: flex;
+  max-width: 960px;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
 }
 
 /* background image */
@@ -35,37 +31,34 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+  width: auto;
 
 }
 @media only screen and (max-width: 1024px) {
   .background-image-container {
     height: 22rem;
     background-position: 40%;
+
   }
-  .container {
-    width: 100%;
-  }
+
 }
 
 @media only screen and (max-width: 560px) {
   .background-image-container {
     height: 17rem;
-    background-position: 30%;
+    background-position: 20%;
   }
   .container {
-    width: 100%;
+    flex-basis: 1;
   }
 }
 /* top banner with logo and menu */
 .top-banner {
   background-color: cadetblue;
   display: flex;
-  width: 100%;
   position: relative;
   top: 1rem;
+  margin: 0 auto;
   justify-content: space-between;
 }
 .logo {
@@ -79,6 +72,7 @@ body {
 .logo img {
   height: 1.5rem;
   padding-right: 1rem;
+  padding-left: 2rem;
 }
 .menu {
   display: flex;
@@ -91,7 +85,7 @@ body {
 
 }
 li {
-  padding: 1rem 1rem;
+  padding: 0rem 1rem;
 }
 .small-screen-menu {
   display: none;
@@ -99,6 +93,9 @@ li {
 @media only screen and (max-width: 1024px) {
   .top-banner {
     position: absolute;
+    width: 100%;
+
+
 }
 }
 @media only screen and (max-width: 615px) {
@@ -110,5 +107,51 @@ li {
   }
   .small-screen-menu {
     display: block;
+  }
+}
+/* tagline */
+
+.tagline-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.tagline-box {
+  background-color: white;
+  position: relative;
+  top: 10rem;
+  padding: 1.5rem 5rem;
+  width: auto;
+}
+.tagline {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .tagline-box {
+    top: 10rem;
+    right: 2rem;
+    padding: 0.75rem 4rem;
+}
+   .tagline {
+     font-size: 1.33rem;
+   }
+}
+@media only screen and (max-width: 560px) {
+  .tagline-box {
+    width: 100%;
+    display: inline-block;
+    left: 0rem;
+    top: 13rem;
+    word-wrap:
+
+
+  }
+
+
+
   }
 }
