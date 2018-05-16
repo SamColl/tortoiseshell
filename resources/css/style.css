@@ -146,12 +146,62 @@ li {
     display: inline-block;
     left: 0rem;
     top: 13rem;
-    word-wrap:
-
 
   }
+  }
+ /* icon section */
+
+ .icon-container  {
+   display: flex;
+   justify-content: center;
+   align-content: flex-start;
+   height: 8rem;
+ }
+ .icon-box {
+   display: flex;
+   flex-direction: column;
+   height: 8rem;
+   padding: 3rem;
+   max-width: 5rem;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+.icon-box.exams img  {
+  width: 3.5rem;
 
 
+}
+.icon-box.ruler img {
+  max-width: 5rem;
+}
+.icon-box.truck img {
+  max-width: 5rem;
+}
+.icon-text {
+  text-align: center;
+}
 
+@media only screen and (max-width: 560px) {
+  .icon-container {
+  display: block;
+  padding: 3.77rem 0;
+
+  }
+  .icon-box {
+    margin: 0 auto;
+    padding: 0;
+    height: auto;
+  }
+  .truck {
+    padding-top: 1.54rem;
+  }
+  .ruler {
+    padding-top: 1.54rem;
+  }
+  .icon-text {
+    font-size: 0.77rem;
   }
 }
+
+/* info section */
