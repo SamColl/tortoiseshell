@@ -156,6 +156,8 @@ li {
    justify-content: center;
    align-content: flex-start;
    height: 8rem;
+   height: auto;
+
  }
  .icon-box {
    display: flex;
@@ -187,6 +189,7 @@ li {
   display: block;
   padding: 3.77rem 0;
 
+
   }
   .icon-box {
     margin: 0 auto;
@@ -212,8 +215,35 @@ h1 {
 }
 .info-container  {
   display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+
+}
+.info-box {
+  max-width: 35%;
+}
+.philosophy {
+  margin-right: 5%;
 }
 .info-header {
   background-color: cadetblue;
   width: 10rem;
+  line-height: 1rem;
+  padding: 0.5rem 1.25rem;
+}
+
+@media only screen and (max-width:560px) {
+  .info-container {
+    display: block;
+  }
+  .info-box {
+    max-width: 100%;
+    margin: 0;
+    padding-bottom: 4rem;
+  }
+  .info-header {
+    width: 100%;
+  }
+  p {font-size: 0.77rem;}
 }
